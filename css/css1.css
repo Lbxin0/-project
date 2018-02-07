@@ -7,7 +7,7 @@ body{
   margin:0
 }
 body{
-	
+	background:rgba(134,240,255,0.8);
 	padding:0px 30px
 }
 #header{
@@ -28,15 +28,12 @@ body{
 	right:5px;
 	top:-5px
 }
-#header-right img{
-	margin-right:32px
-}
 #text{
 	display:inline;
 	position:absolute;
-	right:162px;
+	right:130px;
 	width:350px;
-	top:32px
+	top:20px
 }
 #header-left {
 	position:absolute;
@@ -66,12 +63,29 @@ body{
 	color:white;
 	cursor:pointer;
 	transition:1.0s;
-	border-radius:20px
+	border-radius:20px;
+	position:relative
 	
+}
+#list li span{
+	position:absolute;
+	top:5px;
+	right:50px;
+	transition:1s;
+	opacity:0
+	
+}
+#list li:hover span{
+	position:absolute;
+	top:30px;
+	right:50px;
+	opacity:1
+
 }
 #list li:nth-child(1),#list li:hover{
 	background:red
 }
+
 list li:nth-child(1){
 	background:red
 }
