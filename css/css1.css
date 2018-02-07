@@ -1,13 +1,10 @@
 
-body{
-  background:url(http://www.yangqq.com/skin/2017/images/top.jpg);
-}
 *{
 	padding:0;
   margin:0
 }
 body{
-	background:rgba(134,240,255,0.8);
+	background:url(http://www.yangqq.com/skin/2017/images/top.jpg);
 	padding:0px 30px
 }
 #header{
