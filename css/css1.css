@@ -28,12 +28,15 @@ body{
 	right:5px;
 	top:-5px
 }
+#header-right img{
+	margin-right:32px
+}
 #text{
 	display:inline;
 	position:absolute;
-	right:180px;
+	right:420px;
 	width:350px;
-	top:20px
+	top:32px
 }
 #header-left {
 	position:absolute;
