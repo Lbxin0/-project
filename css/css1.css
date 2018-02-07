@@ -1,10 +1,78 @@
-*{
-padding:0;
-  margin:0
-}
+
 body{
   background:url(http://www.yangqq.com/skin/2017/images/top.jpg);
 }
-#header-bg{
-background:url(http://pic.51yuansu.com/pic/cover/00/09/29/577dc4a855c94_610.jpg)
+*{
+	padding:0;
+  margin:0
 }
+body{
+	
+	padding:0px 30px
+}
+#header{
+	width:100%;
+	height:120px;
+	background:rgba(253,255,206,1);
+	position:relative;
+	margin:auto apx;
+	padding-top:20px;
+	border-radius:20px
+
+}
+#header img{
+	border-radius:30px
+}
+#header-right{
+	position:absolute;
+	right:5px;
+	top:-5px
+}
+#text{
+	display:inline;
+	position:absolute;
+	right:130px;
+	width:350px;
+	top:20px
+}
+#header-left {
+	position:absolute;
+	top:50%;
+	margin-top:-50px
+
+}
+#mingyan{
+	display:inline;
+	width:80px;
+	margin-top:20px
+}
+#list{
+	list-style:none;
+	padding-top:5px;
+	text-align:center;
+	line-height:40px;
+	background:rgba(216,52,255,0.8);
+	border-radius:20px;
+	margin-top:5px
+}
+#list li{
+	width:140px;
+	height:60px;
+	padding-top:5px;
+	font-size:16px;
+	color:white;
+	cursor:pointer;
+	transition:1.0s;
+	border-radius:20px
+	
+}
+#list li:nth-child(1),#list li:hover{
+	background:red
+}
+list li:nth-child(1){
+	background:red
+}
+
+
+
+
