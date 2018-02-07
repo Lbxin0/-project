@@ -1,4 +1,10 @@
+*{
+padding:0;
+  margin:0
+}
 body{
   background:pink;
-
+}
+#header-bg{
+background:url(http://pic.51yuansu.com/pic/cover/00/09/29/577dc4a855c94_610.jpg)
 }
