@@ -29,7 +29,8 @@ body{
 	display:inline;
 	position:absolute;
 	right:130px;
-	width:350px;
+	width:490px;
+	text-align:center;
 	top:20px
 }
 #header-left {
