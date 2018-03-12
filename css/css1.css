@@ -80,6 +80,10 @@ body{
 	opacity:1
 
 }
+#list li a{
+color:white;
+
+}
 #list li:nth-child(1),#list li:hover{
 	background:red
 }
