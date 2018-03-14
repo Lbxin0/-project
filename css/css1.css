@@ -1,10 +1,10 @@
-
 *{
 	padding:0;
   margin:0
 }
 body{
-	background:url(http://www.yangqq.com/skin/2017/images/top.jpg);
+	background: url(http://www.yangqq.com/skin/2017/images/top.jpg) no-repeat center top #075498;
+	
 	padding:0px 30px
 }
 #header{
@@ -17,6 +17,80 @@ body{
 	border-radius:20px
 
 }
+#nv-sp{
+	color: rgba(255,26,242,0.8);
+	position: absolute;
+	top: 28px;
+	left: 40px;
+	display: block;
+	font-size: 40px;
+}
+#resume{
+	width:100%;
+	
+	background: url(http://www.yangqq.com/skin/2017/images/articlebg.png) repeat;
+	margin-top:90px;
+	padding:18px;
+}
+#resume-con{
+	box-shadow: #075498 0px 1px 10px;
+	background: url(http://www.yangqq.com/skin/2017/images/articlebg.png) repeat;
+	padding:5px 0;
+}
+#con-md{
+	width:1000px; 
+	height:1200px;
+	border:1px solid red;
+	margin:20px auto;
+}
+#con-md-img{
+	margin:10px auto;
+	width:130px; 
+	height:auto;
+	box-shadow: #075498 0px 1px 5px;
+	
+}
+#con-md-img img{
+	width:130px; 
+	height:auto;
+	
+
+}
+#ver-line{
+	width:2px;
+	height:800px;
+	border-left:2px solid red;
+	margin:auto;
+	position: relative;
+
+}
+#line-right{
+	width:450px;
+	height:240px;
+	position: absolute;
+	top:20px;
+	left:20px;
+	border:2px solid red;
+	padding:12px;
+
+}
+#line-left{
+	width:100px;
+	line-height:40px;
+	position: absolute;
+	top:110px;
+	text-align:center;
+
+	left:-120px;
+	border:2px solid red;
+
+}
+#line-left-txt{}
+#line-right ul{
+	list-style:none;
+
+}
+
 #header img{
 	border-radius:30px
 }
@@ -91,7 +165,3 @@ color:white;
 list li:nth-child(1){
 	background:red
 }
-
-
-
-
