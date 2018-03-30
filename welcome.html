@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lbxi科技网</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+     *{
+            padding:0;
+            margin:0
+    }
+   
+    body{
+        background:url("http://pic.51yuansu.com/pic3/cover/01/20/03/59055b177e582_610.jpg") no-repeat center top 
+    }
+    #all {
+        width:1000px;
+        margin:100px auto;
+        border:1px solid red
+    }
+    #content{
+        width:100%;
+        padding:1px;
+
+    }
+    #content img{
+        display: block;
+        margin:10px auto;
+
+    }
+    #marquee-txt{
+        width:400px;
+        margin:2px auto;
+
+    }
+    #marquee-content{
+        color:rgb(255, 0, 242);
+        font-weight:bolder;
+        font-size: 18px
+    }
+
+    /*幽灵按钮开始*/
+    #div-btn{ display:flex;justify-content:space-between;}
+    #div-group{ height:140px; width:240px; background:blue;transition-duration: 1s ;position:relative;text-align:center;; color:#fff;margin-left: 58px;margin-bottom:12px }
+    #div-top{ background:rgba(255,255,255,1); width:0; height:10px; position:absolute; top:0; right:0}
+    #div-bottom{ background:rgba(255,255,255,1); width:0; height:10px; position:absolute; bottom:0; left:0}
+    #div-group a{ text-decoration:none; color:#fff; font:bold 20px Arial;line-height:140px}
+    #div-group:hover{ background:#fff; transition:.3s}
+    #div-group:hover a{ color:blue; transition:.3s}
+    #div-group:hover #div-top{ width:100%; transition:.3s; background:blue}
+    #div-group:hover #div-bottom{ width:100%;transition:.3s; background:blue}
+    /*幽灵按钮结束*/
+    
+    </style>
+</head>
+<body style=" background-repeat:no-repeat ;background-size:100% 100%; background-attachment: fixed;opacity:0.8" >
+    <div id="all">
+
+        <div id="content" class="row">
+            <img src="image/banner/1.jpg" style="width:400px">
+            <div id="marquee-txt">
+                <marquee id="marquee-content">welcome to Lbxin科技网</marquee>
+            </div>
+            <div id="div-btn">
+                <div id="div-group">
+                <div id="div-top"></div>
+                <a href="#">主页</a>
+                <div id="div-bottom"></div>
+                </div>
+                
+                <div id="div-group" style="margin-right:58px">
+                <div id="div-top"></div>
+                <a href="#">Welcome</a>
+                <div id="div-bottom"></div>
+                </div>
+            </div>
+</body>
+</html>
