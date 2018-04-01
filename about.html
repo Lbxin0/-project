@@ -12,6 +12,10 @@
             padding:0;
             margin:0
         }
+        .row{
+            margin-left:-18px;
+            margin-right:-18px
+        }
         body{
             overflow-x:hidden;
             background: #f4f4f4
@@ -30,8 +34,10 @@
         }
         #header_left_left:hover,#header_left_right span:hover{
             color:red;
-            transform:scale(1.1);
-            transition-duration:1.5s;
+            /*transform:scale(1.1);
+            transition-duration:1.5s;*/
+            font-weight:bolder;
+            
             cursor: pointer;
            
         }
@@ -51,21 +57,27 @@
 
       #header-images img{
           width:100%;
+
           height:380px
           
 
       }
 
-      #about-header{
+      #col-md-10{
+          border-bottom:2px solid #3E3E3E;
+      }
+      #about .col-md-10{
+          border-bottom:2px solid rgb(112, 112, 112);
+          padding-bottom:15px
       }
       #about-header-txt{
           display:block;
           margin:0 auto;
           width:180px;
           font-size: 40px
-
       }
-      #about-header-img{
+     
+      #about-header-img,#skill-header-img{
           display:block;
           margin:-22px auto;
           width:250px;
@@ -74,12 +86,14 @@
 
       }
       #about-content{
-          margin-top:20px
+          margin-top:20px;
+         
       }
 
       #about-content ul li{
           list-style: none;
           float: left;
+
           width:17%;
           background:aqua;
           text-align:center;
@@ -88,6 +102,81 @@
       }
       #about-content ul li:nth-child(1){
           margin-left:130px
+      }
+      #about-content-left,#about-content-middle,#about-content-right{
+          background:bisque;
+          text-align: center;
+          line-height:30px;
+          margin:2px 0px 0px 20px;
+          cursor:pointer;
+
+      }
+      #about-content-left:hover,#about-content-middle:hover,#about-content-right:hover{
+          color:red;
+          font-weight:bolder;
+          background:#FFC47C
+
+      }
+      #about-content-left-basic{
+          margin-top:2px;
+          color:black;
+          font-weight:normal;
+      }
+      #about-content-left-basic-name,#about-content-left-basic-sex,#about-content-left-basic-school{
+          border-top:2px solid white;
+          display:inline-block;
+          width:100%;
+          }
+      #about-content-left-basic-name:hover,#about-content-left-basic-sex:hover,#about-content-left-basic-school:hover{
+          color:red;
+          display:inline-block;
+          width:100%;
+          background:#FAA53E
+      }
+       #skill-header{
+           margin-bottom:20px
+       }
+       #skill-header-txt{
+        display:block;
+          margin:0 auto;
+          width:480px;
+          font-size: 40px;
+          text-align:center;
+      }
+      #skill-content-PS-in{
+          width:50px;
+          line-height:50px;
+          border-radius:50%;
+          background:#f4f4f4;
+          display:block;
+          border:1px solid #ccc;
+          text-align:center;
+      }
+      #skill-content-PS-out{
+          width:100px;
+          line-height:100px;
+          border-radius:50%;
+          background:#ff0000;
+          display:block;
+          border:1px solid #ccc;
+          padding:23px;
+          cursor:pointer;
+      }
+      #skill-content-PS-in:hover{
+          color:red;
+          font-weight:bold
+      }
+      #skill-content-PhotoShop{
+          display: block;
+          width:100px;
+          line-height: 30px;
+          text-align:center;
+          font-weight:bold;
+          margin-top:8px;
+          background:#FFB2FF;
+          border-radius:15px;
+          border:1px solid rgb(112, 112, 112)；
+          cursor:pointer;
       }
     </style>
 </head>
@@ -112,24 +201,69 @@
             <div class="col-md-1"></div>
     </div>
     <div class="row" id="about">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-            <div id="about-header">
-                <div id="about-header-txt">About Me</div>
-                <div id="about-header-img"><img style="width:250px;" src="http://pic.51yuansu.com/pic3/cover/02/43/26/59e4a2a2c4c0a_610.jpg"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="about-header">
+                    <div id="about-header-txt">About Me</div>
+                    <div id="about-header-img"><img style="width:250px;" src="http://pic.51yuansu.com/pic3/cover/02/43/26/59e4a2a2c4c0a_610.jpg"></div>
+                </div>
+                <div id="about-content" class="row">
+                    <div class="col-md-1"></div>
+                    <div style="margin-left:-20px" id="about-content-left" class="col-md-3">
+                        <span style="padding-left:40px">basic information</span>
+                        <div id="about-content-left-basic">
+                            <span style="padding-left:40px" id="about-content-left-basic-name">姓名：严昕</span><br>
+                            <span style="padding-left:40px" id="about-content-left-basic-sex">性别：男</span><br>
+                            <span style="padding-left:40px".0 id="about-content-left-basic-school">学校：XXX大学</span><br>
+                        </div>
+                    </div>
+                    <div id="about-content-middle" class="col-md-4">
+                        <span>Tutorial column</span>
+                        <div id="about-content-left-basic">
+                                <span id="about-content-left-basic-name">前端设计</span><br>
+                                <span id="about-content-left-basic-sex">平面与UI</span><br>
+                                <span id="about-content-left-basic-school">图书专区</span><br>
+                        </div>
+                    
+                    </div>
+                    <div id="about-content-right" class="col-md-3">
+                        <span>Self assessment</span>
+                        <div id="about-content-left-basic">
+                                <span id="about-content-left-basic-name">性格：内向</span><br>
+                                <span id="about-content-left-basic-sex">特色：勤奋朴实</span><br>
+                                <span id="about-content-left-basic-school">方向：前端平面</span><br>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="about-content">
-                <ul id="about-content-left">
-                    <li>information</li>
-                </ul>
-                <ul id="about-content-middle">
-                    <li>Tutorial column</li>
-                </ul>
-                <ul id="about-content-right">
-                    <li>Self assessment</li>
-                </ul>
+            <div class="col-md-1"></div>
+    </div>
+    <div class="row" id="skill">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="skill-header">
+                    <div id="skill-header-txt">Professional skills</div>
+                    <div id="skill-header-img"><img style="width:250px;" src="http://pic.51yuansu.com/pic3/cover/02/43/26/59e4a2a2c4c0a_610.jpg"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <span id="skill-content-PS-out"><span id="skill-content-PS-in">PS</span></span>
+                        <span id="skill-content-PhotoShop">PhotoShop</span>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                            <span id="skill-content-PS-out"><span id="skill-content-PS-in">FS</span></span>
+                            <span id="skill-content-PhotoShop">Flash</span>
+                    </div>
+                    <div class="col-md-3">
+                            <span id="skill-content-PS-out"><span id="skill-content-PS-in">ST</span></span>
+                            <span id="skill-content-PhotoShop">sublime-text</span>
+                    </div>
+                    
+                </div>
             </div>
-        </div>
-        <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+    </div>
 </body>
 </html>
