@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幽灵按钮++</title>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+*{ padding:0; margin:0;}
+body{ background:rgba(153,153,153,0.3)}
+#div-btn{ width:1000px;display:flex;justify-content:space-between; margin:100px auto}
+#div-group{ height:100px; width:250px; background:blue;position:relative;text-align:center;; color:#fff; }
+#div-top{ background:rgba(255,255,255,1); width:0; height:10px; position:absolute; top:0; right:0}
+#div-bottom{ background:rgba(255,255,255,1); width:0; height:10px; position:absolute; bottom:0; left:0}
+#div-group a{ text-decoration:none; color:#fff; font:bold 20px Arial;line-height:100px}
+#div-group:hover{ background:#fff; transition:.3s}
+#div-group:hover a{ color:blue; transition:.3s}
+#div-group:hover #div-top{ width:100%; transition:.3s; background:blue}
+#div-group:hover #div-bottom{ width:100%;transition:.3s; background:blue}
+</style>
+</head>
+
+<body>
+
+<!--
+		justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
+		提示：使用 align-content 属性对齐交叉轴上的各项（垂直）   默认值：flex-start。	
+		CSS 语法:justify-content: flex-start|flex-end|center|space-between|space-around|initial|inherit;
+        flex-start 	默认值。项目位于容器的开头		space-between:项目位于各行之间留有空白的容器内。
+        flex-end:项目位于容器的结尾 			center:项目位于容器的中心。
+        space-around:项目位于各行之前、之间、之后都留有空白的容器内。
+        initial:设置该属性为它的默认值				inherit:从父元素继承该属性
+-->
+
+<!-- 幽灵按钮开始-->
+<div id="div-btn">
+<div id="div-group">
+<div id="div-top"></div>
+<a href="#">JAVASCRIPT</a>
+<div id="div-bottom"></div>
+</div>
+
+<div id="div-group">
+<div id="div-top"></div>
+<a href="#">HTML+CSS</a>
+<div id="div-bottom"></div>
+</div>
+
+<div id="div-group">
+<div id="div-top"></div>
+<a href="#">JQUARY</a>
+<div id="div-bottom"></div>
+</div>
+</div>
+<!--幽灵按钮结束-->
+
+</body>
+</html>
